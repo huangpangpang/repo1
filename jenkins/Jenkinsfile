@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "multi baranch pipeline build - integration"
+            }
+        }
+        stage('test') {
+            steps {
+                echo "multi baranch pipeline test - integration"
+            }
+        }
+        stage('deploy') {
+            steps {
+                echo "multi baranch pipeline deploy - integration"
+            }
+        }
+    }
+}
